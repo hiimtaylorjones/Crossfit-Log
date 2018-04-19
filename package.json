@@ -1,0 +1,17 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "description": "app for testing out and learning node react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "taylorjonessoftware@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.1.1",
+    "sinon": "^4.5.0"
+  }
+}
