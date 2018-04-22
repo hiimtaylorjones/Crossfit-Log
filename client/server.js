@@ -6,12 +6,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/api/hello', function(request, response) {
   let json = {
-    data: {
-      "one": "onnnnneee",
-      "two": "twwwwwwooo",
-      "three": "threeeee"
-    },
-    type: "json_test"
+    express: "hello from Express backend"
   };
   response.send(json);
 });
