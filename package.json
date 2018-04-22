@@ -1,17 +1,17 @@
 {
   "name": "node-react",
-  "version": "1.0.0",
-  "description": "app for testing out and learning node react",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "taylorjonessoftware@gmail.com",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "chai": "^4.1.2",
-    "express": "^4.16.3",
-    "mocha": "^5.1.1",
-    "sinon": "^4.5.0"
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "proxy": "http://localhost:5000/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
