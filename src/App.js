@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Workout from './Workout';
+
 class App extends Component {
   state = {
     response: ''
@@ -33,6 +35,9 @@ class App extends Component {
         <p className="App-intro">
           Response state: {this.state.response}
         </p>
+
+        <h2>Enter Workout</h2>
+        <Workout />
       </div>
     );
   }
