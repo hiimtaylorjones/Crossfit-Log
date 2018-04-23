@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './Workout.css';
+import './Workout.scss';
 
 class Workout extends Component {
   state = {
