@@ -5,19 +5,13 @@ class Workout extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      time: '',
-      weight: '',
-      date: '',
-      classTime: '',
-      scale: 'RX'
-    };
+    this.state = { time: '' };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({time: event.target.value});
   }
 
   render() {
@@ -25,8 +19,8 @@ class Workout extends Component {
       <form className="workout-form">
         <div className="input-group">
           <label>
-            Weight
-            <input value={this.state.weight} onChange={this.handleChange} />
+            Time to Completion:
+            <input value={this.state.time} onChange={this.handleChange} />
           </label>
         </div>
       </form>

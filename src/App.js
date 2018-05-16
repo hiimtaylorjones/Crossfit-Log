@@ -12,6 +12,7 @@ class App extends Component {
     this.callApi()
       .then(res => this.setState({response: res.express }))
       .catch(err => console.log(err));
+
   }
 
   callApi = async() => {
@@ -38,9 +39,6 @@ class App extends Component {
           </header>
         </div>
         <div>
-          <p className="App-intro">
-            Response state: {this.state.response}
-          </p>
           <h2>Enter Workout</h2>
           <Workout />
         </div>
