@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/api/hello', function(request, response) {
   let json = {
-    express: "hello from Express backend"
+    express: "Hello from Express backend"
   };
   response.send(json);
 });

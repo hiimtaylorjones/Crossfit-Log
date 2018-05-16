@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Workout from './Workout';
@@ -27,17 +26,24 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Response state: {this.state.response}
-        </p>
-
-        <h2>Enter Workout</h2>
-        <Workout />
+      <div>
+        <div className="Navigation">
+          <header className="App-header center">
+            <h1 className="App-title">Crossfit Workout Log</h1>
+            <ul>
+              <li><a href="#">Workouts</a></li>
+              <li><a href="#">Fuel</a></li>
+              <li><a href="#">Progress</a></li>
+            </ul>
+          </header>
+        </div>
+        <div>
+          <p className="App-intro">
+            Response state: {this.state.response}
+          </p>
+          <h2>Enter Workout</h2>
+          <Workout />
+        </div>
       </div>
     );
   }
