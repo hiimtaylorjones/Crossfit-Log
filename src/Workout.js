@@ -5,7 +5,12 @@ class Workout extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { time: '' };
+    this.state = { 
+      title: '',
+      time: '',
+      description: '',
+      additionalNotes: ''
+    };
 
     this.handleChange = this.handleChange.bind(this);
   }
@@ -18,10 +23,24 @@ class Workout extends Component {
     return (
       <form className="workout-form">
         <div className="input-group">
-          <label>
-            Time to Completion:
-            <input value={this.state.time} onChange={this.handleChange} />
-          </label>
+          <label>Workout Title</label>
+          <br />
+          <input value={this.state.title} onChange={this.handleChange} />
+        </div>
+        <div className="input-group">
+          <label>Time to Completion</label>
+          <br />
+          <input value={this.state.time} onChange={this.handleChange} />
+        </div>
+        <div className="input-group">
+          <label>Workout Description</label>
+          <br />
+          <textarea value={this.state.description} rows="5" onChange={this.handleChange} />
+        </div>
+        <div className="input-group">
+          <label>Additional Notes</label>
+          <br />
+          <textarea value={this.state.additionalNotes} rows="5" onChange={this.handleChange} />
         </div>
       </form>
     );
