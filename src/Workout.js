@@ -16,7 +16,7 @@ class Workout extends Component {
   }
 
   handleChange(event) {
-    this.setState({time: event.target.value});
+    this.setState({ [event.target.name]: event.target.value });
   }
 
   render() {
@@ -25,22 +25,22 @@ class Workout extends Component {
         <div className="input-group">
           <label>Workout Title</label>
           <br />
-          <input value={this.state.title} onChange={this.handleChange} />
+          <input name="title" value={this.state.title} onChange={this.handleChange} />
         </div>
         <div className="input-group">
           <label>Time to Completion</label>
           <br />
-          <input value={this.state.time} onChange={this.handleChange} />
+          <input name="time" value={this.state.time} onChange={this.handleChange} />
         </div>
         <div className="input-group">
           <label>Workout Description</label>
           <br />
-          <textarea value={this.state.description} rows="5" onChange={this.handleChange} />
+          <textarea name="description" value={this.state.description} rows="6" onChange={this.handleChange} />
         </div>
         <div className="input-group">
           <label>Additional Notes</label>
           <br />
-          <textarea value={this.state.additionalNotes} rows="5" onChange={this.handleChange} />
+          <textarea name="additionalNotes" value={this.state.additionalNotes} rows="6" onChange={this.handleChange} />
         </div>
       </form>
     );

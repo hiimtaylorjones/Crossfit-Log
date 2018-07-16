@@ -18,8 +18,13 @@
   height: 30px;
   border-radius: 4px;
   font-size: 1.2em;
+  padding: 4px;
 }
 
 .workout-form textarea {
   width: 60%;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 1.3em;
+  padding: 4px;
 }
