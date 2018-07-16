@@ -22,6 +22,10 @@ class Workout extends Component {
   callApi = async() => {
     const response = await fetch('/api/workouts', {
       method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(this.state)
     });
     const body = await response.json();
