@@ -11,4 +11,12 @@ app.get('/api/hello', function(request, response) {
   response.send(json);
 });
 
+app.post('/api/workouts', function(request, response) {
+
+  response.send({
+    status: 200,
+    message: "Workout created!"
+  })
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
