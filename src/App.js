@@ -38,7 +38,7 @@ class App extends Component {
             </ul>
           </header>
         </div>
-        <div>
+        <div class="container">
           <h2>Enter Workout</h2>
           <Workout />
         </div>

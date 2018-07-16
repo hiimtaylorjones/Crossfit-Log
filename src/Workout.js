@@ -42,6 +42,7 @@ class Workout extends Component {
           <br />
           <textarea name="additionalNotes" value={this.state.additionalNotes} rows="6" onChange={this.handleChange} />
         </div>
+        <button type="submit" class="submit-button">Record Workout</button>
       </form>
     );
   }
